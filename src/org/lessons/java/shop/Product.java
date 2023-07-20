@@ -17,8 +17,12 @@ fare in modo che:
 - Il prodotto esponga un metodo per avere il nome esteso, ottenuto concatenando codice-nome: il codice deve avere un pad left di zeri per arrivare a 8 caratteri (ad esempio codice 91 diventa 00000091, mentre codice 123445567 resta come è)
      */
 
-    // CAMPI: codice (numero intero), nome, descrizione, prezzo, iva
-
+    // CAMPI
+private int code;
+private String name;
+private String description;
+private double price;
+private double iva;
 
 
     // COSTRUTTORI
