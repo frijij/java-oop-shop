@@ -81,11 +81,32 @@ private double iva;
     }
 
 
+
+
     // METODI
+    // prezzo con iva
+public double getPriceIva() {
+        return price-(price*iva);
+}
+
+    // concatenazione nome e codice prodotto
+
+    public String getCompleteName(){
+        return code+name;
+    }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "code=" + code +
+                ", name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                ", price=" + price +
+                ", iva=" + iva +
+                '}';
+    }
 
 
-    //3. prezzo con iva
 
-    //4. concatenazione nome e codice prodotto
 
 }
