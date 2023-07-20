@@ -1,5 +1,7 @@
 package org.lessons.java.shop;
 
+import java.util.Random;
+
 public class Product {
     /*
     Un prodotto è caratterizzato da:
@@ -27,17 +29,60 @@ private double iva;
 
     // COSTRUTTORI
 
+    public Product(String name, String description, double price, double iva) {
+       Random casuale = new Random();
+        this.code = casuale.nextInt(10000000, 99999999);
+        this.name = name;
+        this.description = description;
+        this.price = price;
+        this.iva = iva;
+    }
 
 
     //GETTERS E SETTERS
 // getter solo codice prodotto
+
+    public int getCode() {
+        return code;
+    }
+
     // getter + setter per tutti gli altri
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public double getIva() {
+        return iva;
+    }
+
+    public void setIva(double iva) {
+        this.iva = iva;
+    }
 
 
     // METODI
-    // 1. metodo per crazione random codice prodotto
 
-    //2. prezzo base
 
     //3. prezzo con iva
 
